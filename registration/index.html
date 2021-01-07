@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>registration</title>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="../Home/index.html">Home</a></li>
+            <li><a href="../Roadmap/roadmap.html">Road-Map</a></li>
+            <li><a href="../registration/index.html">Registeration</a></li>
+            <li><a href="http://www.iti.gov.eg/">Contact</a></li>
+          </ul>
+            <img src="../imgs/ITI_logo.png"/>
+    </div>
+
+    
+
+    <div class="form">
+        <h2 style="color:lightseagreen;">Register-Create Account</h2>
+        <p>Field marked with <span>*</span> are compulsory fields </p>
+       <form action="https://www.google.com.eg/" method="GET">
+           <table>
+               <tr>
+                   <td class="label"><label><span>*</span>your Name</label></td>
+                   <td><input type="text" name="firstName" size="30" required/></td>
+               </tr>
+               <tr>
+                <td class="label"><label><span>*</span>Email ID</label></td>
+                <td><input type="email" name="email"size="40" required/></td>
+            </tr>
+            <tr>
+                <td class="label"><label>Alternate Email ID</label></td>
+                <td><input type="email" name="Altemail"size="40"/></td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="label">Your Phone</td>
+                <td>Country Code - City Code - Phone Number</td>
+            </tr>
+            <tr>
+                <td ><input type="tel" name="countryCode" size="5"> - <input type="tel" name="cityCode" size="5"> - <input type="tel" name="Phone" size="15">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">mobile Phone</td>
+                <td><input type="tel" name="mobile" size="30"></td>
+            </tr>
+     
+            <tr>
+                <td class="label"><span>*</span>Your postal adress</td>
+                <td><textarea name="postal" rows="4"cols="30"required></textarea></td>
+            </tr>
+            <tr>
+                <td class="label"><span>*</span>Country</td>
+                <td><select id="country" name="country" required>
+                    <option disabled selected>---------------Select one---------------</option>
+                    <option value="Afganistan">Afghanistan</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="American Samoa">American Samoa</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                  </select></td>
+            </tr>
+            <tr>
+                <td class="label"><span>*</span>Password</td>
+                <td><input type="password" name="psw" size="20" required></td>
+            </tr>
+            <tr>
+                <td class="label"><span>*</span>re-enter Password</td>
+                <td><input type="password" name="psw-repeat" size="20" required></td>
+            </tr>
+           </table>
+           <br>
+           <div class="btn">
+            <div><input type="checkbox"  name="terms" required> i accept the <span class="terms">Terms of Use </span></div>
+            <br>
+            <button type="submit" name="submit" value="Submit">Conintue >></button>
+            <button type="reset" value="reset" > reset</button>
+          </div>
+       </form>
+    </div>
+
+    <hr>
+    <p id="copyright">Copyright 2021 by Noha Salah&reg;.All Rights Reserved.</p>
+</body>
+</html>
